@@ -8,6 +8,7 @@ import ProductIndex from '@/views/product/index'
 import ProductList from '@/views/product/list'
 import ProductDetail from '@/views/product/detail'
 import Contact from '@/views/contact'
+import Detail from '@/views/detail'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component: Index
+    },
+    {//配置一个路由
+      path: '/detail',
+      name: 'detail',
+      component: Detail
     },
     {//配置一个路由
       path: '/news',
