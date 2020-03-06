@@ -64,12 +64,33 @@
 </template>
 
 <script>
+import { getIndex } from '@/api/index';
+
+
 export default {
   data () {
     return {
-
+      indexData: {},
     }
-  }
+  },
+  created(){
+    this.getIndex();
+  },
+  methods: {
+    getIndex(){
+      var _this = this;
+      getIndex({
+        params: {
+          a: 2
+        },
+      }).then(function(res){
+        console.log(res);
+        _this.indexData = res.data;
+      }).catch(function(err){
+        console.log(err);
+      });
+    },
+  },
 }
 </script>
 

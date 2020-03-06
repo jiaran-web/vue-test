@@ -7,9 +7,10 @@ var require = axios.create({//axios的实例对象
   withCredentials: true,//跨域时转发cookie信息
 });
 
+
 require.interceptors.request.use(function (config) {
   // Do something before request is sent
-  //console.log(config,123456)
+//console.log(config,123456)
 
   return config;
 }, function (error) {
