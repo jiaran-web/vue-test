@@ -24,7 +24,7 @@ export default {
     return {
       navData: [
         { to: '/', name: '网站首页' },
-        { to: '/contact', name: '公司简介' },
+        { to: '/detail', name: '公司简介' },
         { to: '/product/list', name: '产品列表' },
         { to: '/news/list', name: '行业资讯' },
         { to: '/contact', name: '联系我们' },
