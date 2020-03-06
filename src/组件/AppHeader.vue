@@ -24,7 +24,11 @@ export default {
     return {
       navData: [
         { to: '/', name: '网站首页' },
+<<<<<<< HEAD:src/components/AppHeader.vue
         { to: '/detail', name: '公司简介' },
+=======
+        { to: '/detial', name: '公司简介' },
+>>>>>>> 969e017964775e7b03a8382d5bfd166fe86fc49f:src/组件/AppHeader.vue
         { to: '/product/list', name: '产品列表' },
         { to: '/news/list', name: '行业资讯' },
         { to: '/contact', name: '联系我们' },
